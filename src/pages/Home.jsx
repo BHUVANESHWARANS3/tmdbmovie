@@ -20,9 +20,14 @@ function Home() {
                 setMovies(data.results);
             });
 
+        
 
     }, [page, watchlist, search]);
 
+    //storing in localstorage
+    useEffect(() => {
+        localStorage.setItem("watchlist", JSON.stringify(watchlist));
+    }, [watchlist]);
     return (
         <div>
 
