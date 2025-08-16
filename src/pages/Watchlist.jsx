@@ -13,6 +13,9 @@ function Watchlist() {
         return !selectedGenre || movie.genre_ids.includes(parseInt(selectedGenre));
     });
 
+    useEffect(() => {
+        localStorage.setItem("watchlist", JSON.stringify(watchlist));
+    }, [watchlist]);
 
     return (
         <div>

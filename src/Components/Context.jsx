@@ -3,7 +3,7 @@ import { createContext, useEffect, useState } from "react";
 export const watchcontext = createContext(null);
 
 export function Watchcontextprovider({children}){
-    const [watchlist, setWatchlist] = useState([]);
+    const [watchlist, setWatchlist] = useState(localStorage.getItem("watchlist") ? JSON.parse(localStorage.getItem("watchlist")) : []);
     const [genre,setGenre] = useState([]);
 
     const togglelist = (movie) => {
