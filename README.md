@@ -1,12 +1,47 @@
-# React + Vite
+Movie App
+📌 Objective
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a Movie Browsing Application that replicates the Movie App built in the recorded session. It integrates with the TMDB API to fetch and display movies, supports pagination, search, favorites, and demonstrates the use of React Context (useContext) for global state management.
 
-Currently, two official plugins are available:
+🚀 Features
+🔗 TMDB API Integration
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Fetch and display a list of popular movies from the TMDB API.
 
-## Expanding the ESLint configuration
+Show movie details such as title, poster, and release date.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📄 Pagination and Search
+
+Navigate through multiple pages of movies.
+
+Search for specific movies using keywords.
+
+❤️ Favorites Handling
+
+Mark/unmark movies as favorites.
+
+Store favorite movies locally (using localStorage).
+
+View all favorited movies on a dedicated Favorites page.
+
+🌐 Global State with useContext
+
+Implemented React Context API to manage global state (favorites).
+
+Provides cleaner state management without prop drilling.
+
+Demonstrates practical usage of useContext in a React app.
+
+🛠️ Tech Stack
+
+React.js – Frontend library
+
+React Context API (useContext) – Global state management
+
+TMDB API – Movie data provider
+
+React Router – Navigation between pages
+
+LocalStorage – Storing favorites locally
+
+CSS / Tailwind (optional) – Styling
